@@ -14,7 +14,7 @@ function App() {
   const fetchPosts = async () => {
     try {
       const res = await fetch(
-        "https://jsonplaceholder.typicode.com/posts?_limit=24"
+        "https://jsonplaceholder.typicode.com/posts"
       );
 
       if (!res.ok) throw new Error("Failed to fetch posts");
